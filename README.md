@@ -90,7 +90,7 @@ This MCP server stores a **knowledge graph** of your features, mapping each work
 ### Install from npm (recommended)
 
 ```bash
-npm install -g project-knowledge-mcp
+npm install --save-dev project-knowledge-mcp
 ```
 
 Or run directly without installing:
