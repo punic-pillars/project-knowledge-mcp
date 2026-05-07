@@ -1,0 +1,19 @@
+node_modules/
+build/
+*.tsbuildinfo
+.kiro
+
+# Logs
+*.log
+npm-debug.log*
+
+# Environment
+.env
+.env.*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE (user-specific settings)
+.vscode/settings.json
