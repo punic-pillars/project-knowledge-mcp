@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "MCP server for cross-project feature knowledge — maps features across mobile, backend, and admin projects",
   "main": "build/index.js",
+  "bin": {
+    "project-knowledge-mcp": "./build/index.js"
+  },
   "type": "module",
   "scripts": {
     "build": "tsc",
