@@ -11,9 +11,7 @@
 ## Quick Start
 
 ```bash
-cd project-knowledge-mcp
-npm install
-npm run build
+npx project-knowledge-mcp --knowledge-file ./project-knowledge.json
 ```
 
 Then add to your MCP settings:
@@ -22,9 +20,9 @@ Then add to your MCP settings:
 {
   "mcpServers": {
     "project-knowledge": {
-      "command": "node",
+      "command": "npx",
       "args": [
-        "C:\\path\\to\\project-knowledge-mcp\\build\\index.js",
+        "project-knowledge-mcp",
         "--knowledge-file", "C:\\projects\\project-knowledge.json"
       ],
       "autoApprove": []
@@ -89,9 +87,22 @@ This MCP server stores a **knowledge graph** of your features, mapping each work
 
 ## Installation & Configuration
 
-### Build the Server
+### Install from npm (recommended)
 
 ```bash
+npm install -g project-knowledge-mcp
+```
+
+Or run directly without installing:
+
+```bash
+npx project-knowledge-mcp --knowledge-file ./project-knowledge.json
+```
+
+### Build from Source
+
+```bash
+git clone https://github.com/punic-pillars/project-knowledge-mcp.git
 cd project-knowledge-mcp
 npm install
 npm run build
@@ -122,9 +133,9 @@ All configuration is provided via CLI arguments. No environment variables or con
 {
   "mcpServers": {
     "project-knowledge": {
-      "command": "node",
+      "command": "npx",
       "args": [
-        "C:\\path\\to\\project-knowledge-mcp\\build\\index.js",
+        "project-knowledge-mcp",
         "--knowledge-file", "C:\\projects\\project-knowledge.json"
       ],
       "autoApprove": []
@@ -139,9 +150,9 @@ All configuration is provided via CLI arguments. No environment variables or con
 {
   "mcpServers": {
     "project-knowledge": {
-      "command": "node",
+      "command": "npx",
       "args": [
-        "C:\\path\\to\\project-knowledge-mcp\\build\\index.js",
+        "project-knowledge-mcp",
         "--knowledge-file", "C:\\projects\\project-knowledge.json",
         "--backend-path", "C:\\projects\\backend",
         "--mobile-path", "C:\\projects\\mobile",
