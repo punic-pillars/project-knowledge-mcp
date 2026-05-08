@@ -2,7 +2,7 @@
   "name": "project-knowledge-mcp",
   "version": "1.0.5",
   "description": "MCP server for cross-project feature knowledge — maps features across mobile, backend, and admin projects",
-  "mcpName": "io.github.punic-pillars/project-knowledge-mcp",
+  "mcpName": "io.github.batook22/project-knowledge-mcp",
   "main": "build/index.js",
   "bin": {
     "project-knowledge-mcp": "build/index.js"
