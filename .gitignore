@@ -17,3 +17,6 @@ Thumbs.db
 
 # IDE (user-specific settings)
 .vscode/settings.json
+
+# MCP Publisher CLI binary
+mcp-publisher.exe
