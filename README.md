@@ -11,7 +11,7 @@
 ## Quick Start
 
 ```bash
-npx project-knowledge-mcp --knowledge-file ./project-knowledge.json
+npx -y project-knowledge-mcp --knowledge-file ./project-knowledge.json
 ```
 
 Then add to your MCP settings:
@@ -22,6 +22,7 @@ Then add to your MCP settings:
     "project-knowledge": {
       "command": "npx",
       "args": [
+        "-y",
         "project-knowledge-mcp",
         "--knowledge-file", "C:\\projects\\project-knowledge.json"
       ],
@@ -96,7 +97,7 @@ npm install --save-dev project-knowledge-mcp
 Or run directly without installing:
 
 ```bash
-npx project-knowledge-mcp --knowledge-file ./project-knowledge.json
+npx -y project-knowledge-mcp --knowledge-file ./project-knowledge.json
 ```
 
 ### Build from Source
@@ -135,6 +136,7 @@ All configuration is provided via CLI arguments. No environment variables or con
     "project-knowledge": {
       "command": "npx",
       "args": [
+        "-y",
         "project-knowledge-mcp",
         "--knowledge-file", "C:\\projects\\project-knowledge.json"
       ],
@@ -152,6 +154,7 @@ All configuration is provided via CLI arguments. No environment variables or con
     "project-knowledge": {
       "command": "npx",
       "args": [
+        "-y",
         "project-knowledge-mcp",
         "--knowledge-file", "C:\\projects\\project-knowledge.json",
         "--backend-path", "C:\\projects\\backend",
