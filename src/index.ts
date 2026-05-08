@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 // ============================================================
 // INDEX — Lean MCP server bootstrap
 // Imports from focused modules: types, config, tools, handlers
